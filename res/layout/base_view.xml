@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/layout_match_all"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+     >
+
+    <LinearLayout
+        style="@style/layout_match_all"
+        android:orientation="vertical"
+        android:splitMotionEvents="false" >
+
+        <LinearLayout
+            android:id="@+id/relative_title"
+            style="@style/layoutHead"
+            android:splitMotionEvents="false"
+            android:background="@color/title" >
+
+            <RelativeLayout
+                android:id="@+id/relative_title_leftUI"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_weight="1.2"
+                android:gravity="left" >
+
+                <!-- <include layout="@layout/base_view_titleleft"/> -->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_title_centerUI"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_weight="2.5"
+                android:gravity="center"
+                android:splitMotionEvents="false" >
+
+                <!-- <include layout="@layout/base_view_titlecenter"/> -->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_title_rightUI"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:layout_weight="1.2"
+                android:gravity="right"
+                android:splitMotionEvents="false" >
+            </RelativeLayout>
+        </LinearLayout>
+	    <ImageView
+		    android:id="@+id/img_underline"
+		    android:layout_width="match_parent"
+		    android:layout_height="1px"
+		    android:background="@color/title_unline"/>
+	    <include layout="@layout/empty" />
+        <LinearLayout
+            android:id="@+id/linear_contentView"
+            style="@style/layout_match_all"
+            android:orientation="vertical"
+            android:splitMotionEvents="false" />
+    </LinearLayout>
+
+</FrameLayout>

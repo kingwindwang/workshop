@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+	style="@style/layout_wrap_all"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<ImageView
+		android:id="@+id/img_fragment_title"
+		style="@style/layout_wrap_all"
+		android:adjustViewBounds="true"
+		android:src="@drawable/img_index_title2">
+	</ImageView>
+
+	<TextView
+		android:id="@+id/txt_fragment_title"
+		style="@style/common_navgator_textview"
+		android:textColor="@color/white"
+		android:visibility="gone"/>
+</LinearLayout>
+
+
+
